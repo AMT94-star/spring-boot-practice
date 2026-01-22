@@ -31,5 +31,6 @@ public class CarController {
     public String createCar(@ModelAttribute Car car) {
         carList.add(car);
         return "redirect:/cars";
+
     }
 }
