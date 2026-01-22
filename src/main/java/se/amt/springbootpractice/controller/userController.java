@@ -3,7 +3,6 @@ package se.amt.springbootpractice.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import se.amt.springbootpractice.model.user;
 
 import java.util.ArrayList;
@@ -12,7 +11,6 @@ import java.util.List;
 @Controller
 public class userController {
     @GetMapping("/users")
-    @ResponseBody
     public String users(Model model) {
         List<user> users = new ArrayList<>();
         users.add(new user("OtterFan01",
